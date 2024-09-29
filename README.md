@@ -1,47 +1,89 @@
-# Codsoft Task 3 - Image Captioning AI
+ Image Captioning AI
 
-## Overview
-This project implements an Image Captioning AI using Streamlit and Hugging Face's transformers. It combines computer vision and natural language processing to automatically generate descriptive captions for uploaded images, making use of pre-trained models such as VGG or ResNet for feature extraction.
+Welcome to the Image Captioning AI project! This project was developed as part of my internship at CodSoft, showcasing the integration of computer vision and natural language processing to generate descriptive captions for images.
 
-## Features
-- Upload an image to generate a caption.
-- Utilizes state-of-the-art models from Hugging Face for image recognition and caption generation.
-- User-friendly interface built with Streamlit.
+ Table of Contents
 
-## Installation
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [How It Works](#how-it-works)
+- [License](#license)
+- [Contact](#contact)
 
-### Prerequisites
-- Python 3.6 or higher
-- pip (Python package installer)
+ Features
 
-### Steps
+- Image Upload: Users can easily upload images through a user-friendly interface.
+- Caption Generation: Utilizes Hugging Face's vit-gpt2-image-captioning model to generate accurate and descriptive captions.
+- Dynamic Background: The application features an appealing background to enhance the user experience.
+- Interactive Interface: A simple and engaging interface that displays the generated captions in real-time.
+
+ Technologies Used
+
+- Frontend**: 
+  - HTML
+  - CSS
+  - JavaScript
+- Backend**:
+  - Python
+  - Flask
+- Libraries**:
+  - Hugging Face Transformers
+  - Streamlit
+
+ Installation
+
 1. Clone the repository:
    
    git clone https://github.com/MMA1006/codsoft-task-3.git
-Navigate to the project directory:
-cd codsoft-task-3
-Install the required packages:
+   
 
-pip install -r requirements.txt
-Usage
-To run the application, execute the following command in your terminal:
+2. Navigate to the project directory:
+   
+   cd codsoft-task-3/task3-image-captioning
+   
 
-streamlit run app.py
-Open your web browser and go to http://localhost:8501 to access the application.
+3. Install the required Python packages:
+   
+   pip install -r requirements.txt
+   
 
-How It Works
-Image Upload: Users can upload an image via the web interface.
-Feature Extraction: The application uses a pre-trained model (like VGG or ResNet) to extract features from the uploaded image.
-Caption Generation: A transformer-based model processes the extracted features to generate a descriptive caption for the image.
+4. Run the Flask application:
 
-Contributing
-Contributions are welcome! If you have suggestions for improvements or features, please open an issue or submit a pull request.
+   python app.py
+   
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+5. Open your browser and go to `http://127.0.0.1:5000` to start generating captions!
 
-Acknowledgments
-Hugging Face for providing the pre-trained models.
-Streamlit for the web app framework.
+ Usage
 
+Follow the instructions in the installation section to set up the application locally. 
 
+ How It Works
+
+1. The user uploads an image using the file uploader on the web interface.
+2. Upon clicking the "Generate" button, the application processes the image and generates a caption using the pre-trained model.
+3. The generated caption is displayed on the same page.
+
+ License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+ Contact
+
+If you have any questions or feedback, feel free to reach out to me:
+
+- Email: muzali2003@gmail.com
+- GitHub: [MMA1006](https://github.com/MMA1006)
+
+---
+
+Thank you for checking out my Image Captioning AI project!
+
+ Notes:
+- Feel free to adjust any sections to better fit your project or personal preferences.
+- Make sure to replace `app.py` in the installation section with the correct filename of your Flask application if it's named differently.
+- Add any additional features or specific instructions that might be relevant to your project.
+
+Let me know if you need any more modifications or additional sections!
